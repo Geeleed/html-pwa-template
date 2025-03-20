@@ -45,5 +45,3 @@ python -m http.server 8080
 ```
 
 6. เข้าเว็บได้ที่ http://localhost:8080 ถ้าเปิดในมือถือจะ install ยังไม่ได้ ต้อง deploy ก่อนจึงจะใช้ได้
-
-ไฟล์ register.js
