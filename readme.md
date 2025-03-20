@@ -1,10 +1,18 @@
 # PWA (progressive web application) template
 
-1. หาไฟล์ icon ขนาดต่าง ๆ มาให้พร้อมแล้วเก็บไว์ที่โฟลเดอร์ icons หรือใช้ https://pwa-icon-generator.vercel.app
+1. ใช้ template
 
-2. ไฟล์ favicon.ico ใช้ https://favicon.io/favicon-converter อันนี้มีหรือไม่มีก็ได้
+คลิกที่ปุ่ม "Use this template" บริเวณด้านบนขวา เพื่อสร้างเป็น repo ของคุณเอง จากนั้นก็โคลน repo ของคุณไปพัฒนาต่อ
 
-3. แก้ไฟล์ manifest.json
+```bash
+git clone <ที่อยู่ repo ของคุณ>
+```
+
+2. หาไฟล์ icon ขนาดต่าง ๆ มาให้พร้อมแล้วเก็บไว์ที่โฟลเดอร์ icons หรือใช้ https://pwa-icon-generator.vercel.app
+
+3. ไฟล์ favicon.ico ใช้ https://favicon.io/favicon-converter อันนี้มีหรือไม่มีก็ได้
+
+4. แก้ไฟล์ manifest.json
 
 ```bash
 {
@@ -25,9 +33,9 @@
 
 ```
 
-3. พัฒนาโปรเจ็กตัวเองในไฟล์ index.html, script.js, style.js (อยู่ในโฟลเดอร์ src)
+5. พัฒนาโปรเจ็กตัวเองในไฟล์ index.html, script.js, style.js (อยู่ในโฟลเดอร์ src)
 
-4. เพิ่มรายการที่อยู่ไฟล์อื่น ๆ ที่คุณสร้างใหม่ลงใน service-worker.js
+6. เพิ่มรายการที่อยู่ไฟล์อื่น ๆ ที่คุณสร้างใหม่ลงใน service-worker.js
 
 ```bash
 const src = [
@@ -38,10 +46,10 @@ const src = [
 
 ```
 
-5. รัน server ถ้าใช้ python ก็มาที่โฟลเดอร์โปรเจ็กแล้วใช้คำสั่งตามนี้
+7. รัน server ถ้าใช้ python ก็มาที่โฟลเดอร์โปรเจ็กแล้วใช้คำสั่งตามนี้
 
 ```bash
 python -m http.server 8080
 ```
 
-6. เข้าเว็บได้ที่ http://localhost:8080 ถ้าเปิดในมือถือจะ install ยังไม่ได้ ต้อง deploy ก่อนจึงจะใช้ได้
+8. เข้าเว็บได้ที่ http://localhost:8080 ถ้าเปิดในมือถือจะ install ยังไม่ได้ ต้อง deploy ก่อนจึงจะใช้ได้
